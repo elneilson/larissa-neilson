@@ -1,0 +1,17 @@
+name: "Larissa Neilson"
+title: "mfeo"
+description: |
+  mfeo
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Blog"
+      href: blog.html
+    - text: "Larissa"
+      href: larissa.html
+      theme: postcards.css
+output: distill::distill_article
