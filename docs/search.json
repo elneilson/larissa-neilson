@@ -6,22 +6,22 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-01-24T16:41:16-08:00"
+      "last_modified": "2021-01-24T16:48:36-08:00"
     },
     {
       "path": "index.html",
       "title": "Larissa Neilson",
       "author": [],
-      "contents": "\n\n\nlibrary(distill)\nlibrary(postcards)\n\n\n\nBio\nEducation\nUniversity of California, Santa Barbara - Bren School of Environmental Science & Management | Santa Barbara, CA\nMaster of Environmental Science and Management | October 2020 -\nExperience\n\n\n\n",
-      "last_modified": "2021-01-24T16:41:16-08:00"
+      "contents": "\nBio\nEducation\nUniversity of California, Santa Barbara - Bren School of Environmental Science & Management | Santa Barbara, CA\nMaster of Environmental Science and Management | October 2020 -\nExperience\n\n\n\n",
+      "last_modified": "2021-01-24T16:48:36-08:00"
     },
     {
       "path": "larissa.html",
       "title": "Frank Hermosillo",
       "author": [],
       "contents": "\nBio\nFrank Hermosillo studies neural networks and their applications at Google Brain. His research focuses on differentiable network pruning approximation and decentralized gradient inversion mechanics. He frequently collaborates with researchers who study machine learning, computer vision, and cognitive science. His work has been featured in WIRED, The Atlantic, Newsweek, and The New York Times Magazine.\nEducation\nMassachusetts Institute of Technology | Cambridge, MA\nPh.D. in Computer Science | September 2009 - May 2014\nThe University of California, Berkeley | Berkeley, CA\nB.S. in Computer Science | September 2005 - May 2009\nExperience\nGoogle Brain | Principal Investigator | January 2018 - Present\nNetflix | Research Scientist | June 2014 - December 2017\n\n\n\n",
-      "last_modified": "2021-01-24T16:41:16-08:00"
+      "last_modified": "2021-01-24T16:48:36-08:00"
     }
   ],
-  "collections": []
+  "collections": ["posts/posts.json"]
 }
