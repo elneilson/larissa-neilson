@@ -9,12 +9,13 @@ links:
   - label: GitHub
     url:
   - label: Email
-    url: "mailto:email@email.com"
+    url: " "
 site: distill::distill_website
 output: postcards::trestles
 ---
 
 ```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
 library(distill)
 library(postcards)
 ```
