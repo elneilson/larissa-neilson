@@ -8,8 +8,6 @@ links:
     url: "https://twitter.com/brennie2022"
   - label: GitHub
     url: "https://github.com/elneilson"
-  - label: Email
-    url: "eneilson@ucsb.edu"
 site: distill::distill_website
 output:
   postcards::trestles
