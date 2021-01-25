@@ -6,21 +6,21 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-01-24T19:32:40-08:00"
+      "last_modified": "2021-01-24T19:34:49-08:00"
     },
     {
       "path": "blog.html",
       "title": "Blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-01-24T19:32:41-08:00"
+      "last_modified": "2021-01-24T19:34:50-08:00"
     },
     {
       "path": "index.html",
       "title": "Larissa Neilson",
       "author": [],
       "contents": "\n\n    \n    \n      \n        \n          \n            \n              \n            \n              Larissa Neilson\n            \n            \n              \n                \n                    \n                      \n                        LinkedIn\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Twitter\n                      \n                    \n                  \n                                    \n                    \n                      \n                        GitHub\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            \n            Bio\n            \n            \n            Education\n            University of California, Santa Barbara - Bren School of Environmental Science & Management | Santa Barbara, CA\n            Master of Environmental Science and Management | October 2020 -\n            \n            \n            Experience\n            \n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Larissa Neilson\n            \n            \n              \n                \n                                    \n                    \n                      LinkedIn\n                    \n                  \n                                    \n                    \n                      Twitter\n                    \n                  \n                                    \n                    \n                      GitHub\n                    \n                  \n                                  \n              \n            \n            \n              \n              Bio\n              \n              \n              Education\n              University of California, Santa Barbara - Bren School of Environmental Science & Management | Santa Barbara, CA\n              Master of Environmental Science and Management | October 2020 -\n              \n              \n              Experience\n              \n            \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2021-01-24T19:32:46-08:00"
+      "last_modified": "2021-01-24T19:34:53-08:00"
     }
   ],
   "collections": ["posts/posts.json"]
