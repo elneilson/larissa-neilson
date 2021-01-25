@@ -1,3 +1,9 @@
+
+```{r, include = FALSE}
+library(distill)
+library(postcards)
+```
+
 ---
 title: "Larissa Neilson"
 image: "larissa.jpg"
@@ -14,12 +20,6 @@ site: distill::distill_website
 output:
   postcards::trestles
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-library(distill)
-library(postcards)
-```
 
 ## Bio
 
