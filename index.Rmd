@@ -1,6 +1,6 @@
 ---
 title: "Larissa Neilson"
-image: ""
+image: "larissa.jpg"
 links:
   - label: LinkedIn
     url: https://www.linkedin.com/in/larissa-neilson-737195201/
