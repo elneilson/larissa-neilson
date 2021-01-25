@@ -14,7 +14,7 @@ site: distill::distill_website
 output: postcards::trestles
 ---
 
-```{r, include = FALSE}
+```{r setup, include = FALSE}
 library(distill)
 library(postcards)
 ```
