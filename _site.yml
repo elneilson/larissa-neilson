@@ -12,6 +12,6 @@ navbar:
     - text: "Blog"
       href: blog.html
     - text: "Larissa"
-      href: larissa.html
+      href: index.html
       theme: postcards.css
 output: distill::distill_article
