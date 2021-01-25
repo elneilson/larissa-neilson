@@ -3,13 +3,13 @@ title: "Larissa Neilson"
 image: ""
 links:
   - label: LinkedIn
-    url:
+    url: https://www.linkedin.com/in/larissa-neilson-737195201/
   - label: Twitter
-    url:
+    url: https://twitter.com/brennie2022
   - label: GitHub
-    url:
+    url: https://github.com/elneilson
   - label: Email
-    url: " "
+    url: "eneilson@ucsb.edu"
 site: distill::distill_website
 output: postcards::trestles
 ---
