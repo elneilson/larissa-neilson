@@ -1,18 +1,24 @@
 ---
 title: "About me"
-description: Bio
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## Bio
+
+I am originally from Lima, Peru, but I largely grew up in Los Angeles. During my undergraduate education at Cal State Monterey Bay, I was part of NSF's Research Experience for Undergraduates (REU) program where I had the opportunity to work with Dr. Steve Litvin & Dr. Jim Barry at the Monterey Bay Aquarium Research Institute (MBARI) documenting the effects of future climate change on abalone. I also volunteered with Return of the Natives (RON), aiding with environmental education outreach program for 4th-5th grade elementary classes. I am also a huge animal lover and greatly enjoy being outdoors and in the field. I used to volunteer at the UCSC Fort Ord National Reserve monitoring coastal horned lizard populations to inform the dissertation of Ph.D candidate, Danielle Davis. I currently reside in Goleta, CA with my pet rabbit and partner. As I work on my MESM degree, I am working as a research assistant for Dr. Anastasia Quintana, helping with her postdoctoral research on MPA compliance in small-scale fisheries.
+
+
 ## Interests
 
-
+I love being outdoors and exploring national parks and monuments. I have a particular affinity for surveying and exploring herptile communities (lizards, snakes, amphibians). My favorite undergraduate classes were the ones where I had the opportunity to interact with native California wildlife and learn about their ecology and relevant conservation efforts Aside from that, I am highly passionate about environmental justice issues and I am an avid supporter of black & indigenous rights groups.
 
 
 ## Experience
 
-
-
+- Research Assistant (UCSB)
+- MBARI Intern
+- Environmental outreach & education
+- Surveying plant & animal species
