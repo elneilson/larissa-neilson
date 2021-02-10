@@ -1,5 +1,6 @@
-name: "Larissa Neilson"
+name: "."
 title: "Larissa Neilson"
+theme: postcards.css
 description: |
   LN
 output_dir: "docs"
@@ -11,5 +12,6 @@ navbar:
       href: about.html
     - text: "Blog"
       href: blog.html
-      theme: postcards.css
+    - text: "CV"
+      href: my_cv/my_cv.html
 output: distill::distill_article

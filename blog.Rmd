@@ -3,4 +3,4 @@ title: "Blog"  # any name you want here
 listing: posts # do this exactly
 ---
 
-### Welcome
+### My blog

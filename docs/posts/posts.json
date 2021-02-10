@@ -2,7 +2,7 @@
   {
     "path": "posts/2021-01-24-welcome/",
     "title": "Welcome",
-    "description": "A short description of the post.",
+    "description": "This is my super cool new blog!",
     "author": [
       {
         "name": "Larissa Neilson",
@@ -13,7 +13,7 @@
     "categories": [],
     "contents": "\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-02-09T14:19:35-08:00",
+    "last_modified": "2021-02-09T17:03:44-08:00",
     "input_file": {}
   }
 ]
