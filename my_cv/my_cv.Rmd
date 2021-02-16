@@ -4,7 +4,7 @@ name: Larissa
 surname: Neilson
 position: "Master's student"
 location: "Goleta, CA"
-phone: 818 282 6200
+phone: (818) 282-6200
 email: "eneilson@bren.ucsb.edu"
 date: "`r format(Sys.time(), '%B %Y')`"
 output: 
@@ -30,21 +30,22 @@ tribble(
 
 ## Research Experience
 
-- **Research Assistant** (*in progress*)
+**Research Assistant** (*in progress*)
   University of California, Santa Barbara
   Supervisor: Dr. Anastasia Quinatana
-  - 
 
-- **Undergraduate Researcher** (6/18-8/18)  
+**Undergraduate Researcher** (6/18-8/18)  
 Monterey Bay Aquarium Research Institute (MBARI)  
 Supervisors: Dr. Steve Litvin, Dr. Jim Barry  
--Analyzed and quantified the effects of climate change and ocean acidification associated with upwelling on juvenile Haliotis rufescens (red abalone) through an 8-week active experiment for an NSF project  
--Organized and updated Excel worksheets with experiment data of all 300+ individuals  
--Conducted extensive image and statistical analysis using experimental data from 300+ individuals  
--Presented results to audiences ranging from 5-200 people at various conferences and symposiums including SACNAS and the California Central Coast Chapter of The Wildlife Society’s Annual Symposium  
+
+Analyzed and quantified the effects of climate change and ocean acidification associated with upwelling on juvenile Haliotis rufescens (red abalone) through an 8-week active experiment for an NSF project  
+
+Organized and updated Excel worksheets with experiment data of all 300+ individuals  
+
+Conducted extensive image and statistical analysis using experimental data from 300+ individuals  
+
+Presented results to audiences ranging from 5-200 people at various conferences and symposiums including SACNAS and the California Central Coast Chapter of The Wildlife Society’s Annual Symposium  
 
 ## Field/Volunteer Experience
-
-
 
 
