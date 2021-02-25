@@ -1,6 +1,4 @@
 ---
-title: "Blog"  # any name you want here
+title: "Work examples"  # any name you want here
 listing: posts # do this exactly
 ---
-
-### My blog

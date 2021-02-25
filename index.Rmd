@@ -12,4 +12,4 @@ output:
   postcards::trestles
 site: distill::distill_website
 ---
-I am a master's student at the Bren School of Environmental Science & Management at UCSB, and I am specializing in Economics and Politics of the Environment. I am currently working as a research assistant under Dr. Anastasia Quintana, aiding her postdoctoral research at the intersection of small-scale fisheries, conservation, and collective action.
+I am a master's student at the Bren School of Environmental Science & Management at UCSB, and I am specializing in Energy & Climate. I am currently working as a research assistant under Dr. Anastasia Quintana, aiding her postdoctoral research at the intersection of small-scale fisheries, conservation, and collective action.
