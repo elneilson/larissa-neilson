@@ -23,8 +23,8 @@ library(vitae)
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "California State University, Monterey Bay", "2015-2019", "Seaside, CA", "Bachelor of Environmental Science",
-  "Bren School of Environmental Science & Management", "2020-present", "Santa Barbara, CA", "Master of Environmental Science & Management") %>% 
+  "Bren School of Environmental Science & Management", "2020-present", "Santa Barbara, CA", "Master of Environmental Science & Management",
+  "California State University, Monterey Bay", "2015-2019", "Seaside, CA", "Bachelor of Environmental Science") %>% 
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
@@ -37,15 +37,15 @@ tribble(
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
-Supervisor: Anastasia Quintana
+Supervisor - Anastasia Quintana
 
 Duties:
 
-Conducting literature reviews to inform postdoctoral research on compliance in small-scale fisheries
+• Conducting literature reviews to inform postdoctoral research on compliance in small-scale fisheries
 
-Identifying governance types in 75 managed access areas throughout Indonesia, Brazil, Honduras, Micronesia, Mozambique, and the Philipppines & creating a dataset with this information
+• Identifying governance types in 75 managed access areas throughout Indonesia, Brazil, Honduras, Micronesia, Mozambique, and the Philipppines & creating a dataset with this information
 
-Managing the social media presence of Dr. Anastasia Quintana to help expand her network
+• Managing the social media presence of Dr. Anastasia Quintana to help expand her network
 
 ```{r}
 tribble(
@@ -54,15 +54,15 @@ tribble(
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
-Supervisors: Dr. Steve Litvin, Dr. Jim Barry
+Supervisors - Dr. Steve Litvin, Dr. Jim Barry
 
-Quantified & analyzed the effects of present & future climate change and ocean acidification associated with upwelling on juvenile *Haliotis rufescens* (red abalone) through an 8-week live experiment
+• Quantified & analyzed the effects of present & future climate change and ocean acidification associated with upwelling on juvenile *Haliotis rufescens* (red abalone) through an 8-week live experiment
 
-Created & maintained Excel worksheets with abalone measurement parameters for all 300+ individuals
+• Created & maintained Excel worksheets with abalone measurement parameters for all 300+ individuals
 
-Conducted extensive image and statistical analysis using experimental data from 300+ individuals  
+• Conducted extensive image and statistical analysis using experimental data from 300+ individuals  
 
-Presented results to audiences ranging from 5-200 people at various conferences and symposiums including SACNAS and the California Central Coast Chapter of The Wildlife Society’s Annual Symposium
+• Presented results to audiences ranging from 5-200 people at various conferences and symposiums including SACNAS and the California Central Coast Chapter of The Wildlife Society’s Annual Symposium
 
 ### Volunteer Experience
 
@@ -73,11 +73,11 @@ tribble(
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
-Surveyed & monitored *Phrynosoma blainvillii* (Blainville’s horned lizard) populations by catching and PIT tagging individuals
+• Surveyed & monitored *Phrynosoma blainvillii* (Blainville’s horned lizard) populations by catching and PIT tagging individuals
 
-Handled live animals & collected data in the field using measurement equipment to capture parameters such as weight and snout-vent length
+• Handled live animals & collected data in the field using measurement equipment to capture parameters such as weight and snout-vent length
 
-Informed the dissertation of Danielle Davis (UCSC) looking at temporal differences in horned lizard population over time at the UCSC FONR
+• Informed the dissertation of Danielle Davis (UCSC) looking at temporal differences in horned lizard population over time at the UCSC FONR
 
 ```{r}
 tribble(
@@ -86,11 +86,11 @@ tribble(
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
-Collected megalopa crab population data for a California Department of Fish and Wildlife (CDFW) monitoring project aiming to inform Dungeness crab fisheries
+• Collected megalopa crab population data for a California Department of Fish and Wildlife (CDFW) monitoring project aiming to inform Dungeness crab fisheries
 
-Gathered & stored megalopa crab samples once a week from a trap at the Moss Landing Marine Labs boat dock
+• Gathered & stored megalopa crab samples once a week from a trap at the Moss Landing Marine Labs boat dock
 
-Organized & maintained crab sample counts and measurement data into project notebook
+• Organized & maintained crab sample counts and measurement data into project notebook
 
 ```{r}
 tribble(
@@ -99,11 +99,11 @@ tribble(
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
-Co-taught an environmental education outreach program for 4th-5th grade elementary classes at local, lower-income schools
+• Co-taught an environmental education outreach program for 4th-5th grade elementary classes at local, lower-income schools
 
-Prepared & organized lecture material for environmental science presentations adequate for 10-12-year old’s. Topics included photosynthesis, waste management, and climate change
+• Prepared & organized lecture material for environmental science presentations adequate for 10-12-year old’s. Topics included photosynthesis, waste management, and climate change
 
-Assisted in organizing multiple beach planting community events with the goal of reintroducing 200+ native plants across ~5 species back to vulnerable dune ecosystems
+• Assisted in organizing multiple beach planting community events with the goal of reintroducing 200+ native plants across ~5 species back to vulnerable dune ecosystems
 
 ### Skills and certifications
 
