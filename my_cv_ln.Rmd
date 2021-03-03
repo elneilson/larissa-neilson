@@ -1,0 +1,116 @@
+---
+title: CV
+name: Larissa
+surname: Neilson
+position: "Master's candidate"
+location: "Goleta, CA"
+phone: (818) 282-6200
+email: "eneilson@bren.ucsb.edu"
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::markdowncv:
+    theme: kjhealy
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+### Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "California State University, Monterey Bay", "2015-2019", "Seaside, CA", "Bachelor of Environmental Science",
+  "Bren School of Environmental Science & Management", "2020-present", "Santa Barbara, CA", "Master of Environmental Science & Management") %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+### Research Experience
+
+```{r}
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "University of California, Santa Barbara", "2020-present", "Santa Barbara, CA", "Research Assistant") %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+Supervisor: Anastasia Quintana
+
+Duties:
+
+Conducting literature reviews to inform postdoctoral research on compliance in small-scale fisheries
+
+Identifying governance types in 75 managed access areas throughout Indonesia, Brazil, Honduras, Micronesia, Mozambique, and the Philipppines & creating a dataset with this information
+
+Managing the social media presence of Dr. Anastasia Quintana to help expand her network
+
+```{r}
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Monterey Bay Aquarium Research Institute", "June - August 2018", "Moss Landing, CA", "Undergraduate Researcher") %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+Supervisors: Dr. Steve Litvin, Dr. Jim Barry
+
+Quantified & analyzed the effects of present & future climate change and ocean acidification associated with upwelling on juvenile *Haliotis rufescens* (red abalone) through an 8-week live experiment
+
+Created & maintained Excel worksheets with abalone measurement parameters for all 300+ individuals
+
+Conducted extensive image and statistical analysis using experimental data from 300+ individuals  
+
+Presented results to audiences ranging from 5-200 people at various conferences and symposiums including SACNAS and the California Central Coast Chapter of The Wildlife Society’s Annual Symposium
+
+### Volunteer Experience
+
+```{r}
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "University of California, Santa Cruz Fort Ord Natural Reserve", "June - July 2019", "Marina, CA", "Herptile Population Monitoring Volunteer") %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+Surveyed & monitored *Phrynosoma blainvillii* (Blainville’s horned lizard) populations by catching and PIT tagging individuals
+
+Handled live animals & collected data in the field using measurement equipment to capture parameters such as weight and snout-vent length
+
+Informed the dissertation of Danielle Davis (UCSC) looking at temporal differences in horned lizard population over time at the UCSC FONR
+
+```{r}
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "California State University, Monterey Bay", "March - May 2019", "Seaside, CA", "Dungeness Crab Population Project Volunteer") %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+Collected megalopa crab population data for a California Department of Fish and Wildlife (CDFW) monitoring project aiming to inform Dungeness crab fisheries
+
+Gathered & stored megalopa crab samples once a week from a trap at the Moss Landing Marine Labs boat dock
+
+Organized & maintained crab sample counts and measurement data into project notebook
+
+```{r}
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Return of the Natives", "January - May 2018", "Seaside, CA", "Educational Outreach Volunteer") %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+Co-taught an environmental education outreach program for 4th-5th grade elementary classes at local, lower-income schools
+
+Prepared & organized lecture material for environmental science presentations adequate for 10-12-year old’s. Topics included photosynthesis, waste management, and climate change
+
+Assisted in organizing multiple beach planting community events with the goal of reintroducing 200+ native plants across ~5 species back to vulnerable dune ecosystems
+
+### Skills and certifications
+
+**Computer**: Microsoft Office (Word, Excel, PowerPoint), R, Google Suite, Outlooks
+
+**Language**: Bilingual (Spanish), public speaking, problem resolution, team building
+
+**Certifications**: CITI Responsible Research & Conduct, Trimble GPS
+
+

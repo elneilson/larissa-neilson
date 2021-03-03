@@ -13,5 +13,5 @@ navbar:
     - text: "Portfolio"
       href: blog.html
     - text: "CV"
-      href: my_cv.html
+      href: my_cv_ln.html
 output: distill::distill_article

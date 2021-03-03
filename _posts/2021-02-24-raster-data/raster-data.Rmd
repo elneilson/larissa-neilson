@@ -1,7 +1,7 @@
 ---
 title: "Raster data"
 description: |
-  A short description of the post.
+  Exploring Cetacean Species Richness in California
 author:
   - name: Larissa Neilson
     url: {}
@@ -11,13 +11,72 @@ output:
     self_contained: false
 ---
 
-
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(
+  echo = TRUE,
+  message = FALSE,
+  warning = FALSE)
+
+library(raster)
+library(tidyverse)
+library(here)
+library(sf)
+library(fasterize)
+library(rnaturalearth)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
+```{r}
+# Read in all cetacean .tif files
+cetacean_files <- list.files(path = here("ca_cetaceans"), pattern = ".tif", all.files = TRUE, full.names = TRUE)
+```
 
-Learn more about using Distill at <https://rstudio.github.io/distill>.
+```{r}
+# Stack cetacean_files
+ca_cetaceans <- stack(cetacean_files)
 
+# Create threshold
+is_present <- function(x, thresh = .6) {
+  y <- ifelse(x >= thresh, 1, TRUE)
+  return(y)
+}
+
+presence <- calc(ca_cetaceans, fun = is_present)
+
+presence1 <- calc(presence, fun = sum, na.rm = TRUE)
+```
+
+```{r, include = FALSE}
+# Download CA coast sf
+coastline10 <- ne_download(scale = 10, type = "coastline", category = "physical", returnclass = "sf")
+```
+
+### Species richness
+
+```{r}
+# Not shown because a message would persist in my knitted html; this was my code to download the CA coast sf:
+
+# coastline10 <- ne_download(scale = 10, type = "coastline", category = "physical", returnclass = "sf")
+
+# Convert to df
+cetaceans_df <- raster::rasterToPoints(presence1) %>%
+  as.data.frame()
+
+# Map it
+ggplot() +
+geom_raster(data = cetaceans_df, aes(x = x, y = y, fill = layer)) +
+  geom_sf(data = coastline10) +
+  coord_sf(xlim = c(-125, -115), ylim = c(32, 38)) +
+  scale_fill_gradient(low = NA, high = "blue") +
+  labs(x = "Longitude", y = "Latitude") +
+  labs(fill = "# of cetacean species") +
+  ggtitle("Cetacean Species Richness on California's Coast") +
+  theme_minimal() +
+  theme(panel.background = element_rect(fill = 'white'))
+```
+
+**Figure 1.** Cetacean species richness. Species richness was calculated using a probability threshold of >= 0.6, indicating values at which a species is considered to be present. Raster stack was converted into a data frame and plotted over an outline of California's coast (data from the `rnaturalearth` package). Cetacean species richness seems to be highest in California's southern coast.
+
+### Data citation
+
+Kaschner, K., Rius-Barile, J., Kesner-Reyes, K., Garilao, C., Kullander, S., Rees, T., & Froese, R. (2016). AquaMaps: Predicted range maps for aquatic species. www.aquamaps.org
 
