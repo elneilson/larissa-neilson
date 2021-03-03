@@ -28,6 +28,8 @@ tribble(
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
+______________________________________________________________________________
+
 ### Research Experience
 
 ```{r}
@@ -43,7 +45,7 @@ Duties:
 
 • Conducting literature reviews to inform postdoctoral research on compliance in small-scale fisheries
 
-• Identifying governance types in 75 managed access areas throughout Indonesia, Brazil, Honduras, Micronesia, Mozambique, and the Philipppines & creating a dataset with this information
+• Identifying governance types in 75+ managed access areas throughout Indonesia, Brazil, Honduras, Micronesia, Mozambique, and the Philippines & creating a dataset with this information
 
 • Managing the social media presence of Dr. Anastasia Quintana to help expand her network
 
@@ -63,6 +65,8 @@ Supervisors - Dr. Steve Litvin, Dr. Jim Barry
 • Conducted extensive image and statistical analysis using experimental data from 300+ individuals  
 
 • Presented results to audiences ranging from 5-200 people at various conferences and symposiums including SACNAS and the California Central Coast Chapter of The Wildlife Society’s Annual Symposium
+
+______________________________________________________________________________
 
 ### Volunteer Experience
 
@@ -104,6 +108,8 @@ tribble(
 • Prepared & organized lecture material for environmental science presentations adequate for 10-12-year old’s. Topics included photosynthesis, waste management, and climate change
 
 • Assisted in organizing multiple beach planting community events with the goal of reintroducing 200+ native plants across ~5 species back to vulnerable dune ecosystems
+
+______________________________________________________________________________
 
 ### Skills and certifications
 
