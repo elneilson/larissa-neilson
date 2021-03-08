@@ -1,0 +1,105 @@
+---
+title: "Sierra amphibians"
+description: |
+  Exploring the mountain yellow-legged frog population in southern Sierra Nevada
+author:
+  - name: Larissa Neilson
+    url: {}
+date: 2021-03-07
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  message = FALSE,
+  warning = FALSE)
+
+library(tidyverse)
+library(janitor)
+library(here)
+library(patchwork)
+library(lubridate)
+library(readxl)
+```
+
+```{r}
+# Read in Sierra amphibians data using `read_excel()`
+amphibians <- (read_excel(here("sierra_amphibians.xlsx"))) %>% 
+  clean_names()
+```
+
+```{r}
+# Pull the year using `lubridate()` and wrangle to create desired subset
+amphibians_ramu <- amphibians %>% 
+  mutate(date = ymd(survey_date)) %>% 
+  mutate(survey_year = year(date)) %>%
+  filter(amphibian_species == "RAMU") %>%
+  filter(amphibian_life_stage != "EggMass")
+```
+
+```{r}
+# Count by life stage and weight results properly
+ramu_count <- amphibians_ramu %>% 
+  group_by(survey_year) %>% 
+  count(amphibian_life_stage, wt = amphibian_number)
+```
+
+```{r}
+# Create ggplot showing frog counts over the years across life stages
+ramu_plot <- ggplot(data = ramu_count, aes(x = survey_year, y = n)) +
+  geom_col(fill = "darkseagreen3", color = "darkseagreen4") +
+  facet_wrap(~ amphibian_life_stage) +
+  labs(x = NULL , y = "Rana muscosa count") +
+  ggtitle("(a)") +
+  geom_text(aes(label = n), vjust = -0.2, color = "black", size = 2) +
+  theme_minimal()
+```
+
+```{r}
+# Wrangle to create a separate subset for second visualization
+amphibians_ramu_2 <- amphibians %>% 
+  mutate(date = ymd(survey_date)) %>% 
+  mutate(survey_year = year(date)) %>%
+  filter(amphibian_species == "RAMU") %>%
+  filter(amphibian_life_stage == c("Adult", "SubAdult"))
+```
+
+```{r}
+# Find the five lakes with the greatest observed counts of frog adults and subadults
+ramu_count_combined <- amphibians_ramu_2 %>%
+  count(lake_id, wt = amphibian_number) %>%
+  slice_max(n, n = 5) %>% 
+  relocate(n) %>% 
+  mutate(lake_name = "Lake") %>% 
+  unite("lake_id_new", lake_name:lake_id, sep = " ")
+```
+
+
+```{r}
+# Create ggplot showing the five lakes with the greatest observed counts of frogs over the years
+ramu_plot_2 <- ggplot(data = ramu_count_combined, aes(x = fct_reorder(lake_id_new, n), y = n)) +
+  geom_col(fill = "cadetblue3", color = "cadetblue4") +
+  labs(x = NULL, y = "Rana muscosa count") +
+  ggtitle("(b)") +
+  geom_text(aes(label = n), hjust = -0.1, color = "black", size = 2.5) +
+  coord_flip() +
+  theme_minimal()
+```
+
+### Frog counts by life stage over time, and the top 5 lakes with the greatest observed frog counts over time
+
+```{r}
+ramu_plots <- (ramu_plot / ramu_plot_2) & theme_minimal()
+
+ramu_plots
+```
+
+**Figure 1.** (a) Total number of *Rana muscosa* adults, subadults, and tadpoles observed in the southern Sierra Nevada from 1995-2002. (b) The five lakes with the greatest number of *Rana muscosa* adults and subadults from 1995-2002. Data: Knapp et al. 2020. 
+
+#### Data citation:
+
+Knapp, R.A., C. Pavelka, E.E. Hegeman, and T.C. Smith. 2020. The Sierra Lakes Inventory Project: Non-Native fish and community composition of lakes and ponds in the Sierra Nevada, California ver 2. Environmental Data Initiative. https://doi.org/10.6073/pasta/d835832d7fd00d9e4466e44eea87fab3
+

@@ -1,0 +1,87 @@
+---
+title: "Principal Components Analysis"
+description: |
+  Exploring relationships between environmental variables for various countries
+author:
+  - name: Larissa Neilson
+    url: {}
+date: 2021-03-07
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  message = FALSE,
+  warning = FALSE)
+
+library(tidyverse)
+library(janitor)
+library(here)
+library(ggfortify)
+library(plotly)
+```
+
+### Introduction
+
+In this exploratory analysis, I assess the relationship between multiple environmental variables for countries around the world. The data set contains miscellaneous environmental data for 243 countries, and it has been compiled and updated by Zander Venter on Kaggle (Venter 2018). All data was acquired through the Google Earth Engine (https://earthengine.google.com/). In this analysis, I run a principal components analysis (PCA) to explore relationships between the environmental variables.
+
+```{r}
+# Read in world_env_vars data
+world_env_vars <- read_csv(here("world_env_vars.csv")) %>% 
+  clean_names()
+```
+
+```{r, results = "hide"}
+# Wrangle to keep variables of interest, drop NA values, and scale each variable
+world_vars_pca <- world_env_vars %>% 
+  select(ends_with("cover"), ends_with("month"), ends_with("annual")) %>%
+  drop_na() %>% 
+  scale() %>% 
+  prcomp()
+
+# Get eigenvalues
+world_vars_pca$rotation
+
+# Store variable names for biplot
+world_vars_complete <- world_env_vars %>% 
+  select(ends_with("cover"), ends_with("month"), ends_with("annual")) %>% 
+  drop_na()
+
+# Create finalized biplot showing all eigenvectors
+world_vars_biplot <- autoplot(world_vars_pca,
+         data = world_vars_complete,
+         shape = FALSE,
+         label = TRUE,
+         label.colour = "darkblue",
+         label.size = 1.8,
+         loadings = TRUE,
+         loadings.colour = "lightgray",
+         loadings.label = TRUE,
+         loadings.label.colour = "red2",
+         loadings.label.size = 2.5)+
+  theme_minimal()
+```
+
+```{r}
+ggplotly(world_vars_biplot)
+```
+
+```{r, include = FALSE}
+screeplot(world_vars_pca, type = "lines")
+```
+
+**Figure 1.** Principal component analysis biplot showing relationships between eight environmental variables for 243 countries around the world.
+
+### Summary:
+- Precipitation of the driest month and average annual precipitation are both positively correlated to tree canopy cover.
+- Average annual temperature and minimum temperature of the coldest month are positively correlated to each other.
+- Maximum temperature of the warmest month and precipitation of the driest month have no correlation to each other.
+- Cropland cover is negatively correlated with the minimum temperature of the coldest month.
+- This PCA explains 76.64% of the variance in the first two principal components.
+
+#### Data citation
+
+Venter, Z. 2018. Environmental variables for world countries: miscellaneous climatic and environmental variables for world countries, ver 5. https://www.kaggle.com/zanderventer/environmental-variables-for-world-countries

@@ -75,7 +75,6 @@ geom_raster(data = cetaceans_df, aes(x = x, y = y, fill = layer)) +
 
 **Figure 1.** Cetacean species richness. Species richness was calculated using a probability threshold of >= 0.6, indicating values at which a species is considered to be present. Raster stack was converted into a data frame and plotted over an outline of California's coast (data from the `rnaturalearth` package). Cetacean species richness seems to be highest in California's southern coast.
 
-### Data citation
+#### Data citation
 
 Kaschner, K., Rius-Barile, J., Kesner-Reyes, K., Garilao, C., Kullander, S., Rees, T., & Froese, R. (2016). AquaMaps: Predicted range maps for aquatic species. www.aquamaps.org
-

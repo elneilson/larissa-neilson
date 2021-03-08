@@ -1,12 +1,9 @@
 ---
-title: CV
 name: Larissa
 surname: Neilson
 position: "Master's candidate"
-location: "Goleta, CA"
 phone: (818) 282-6200
 email: "eneilson@bren.ucsb.edu"
-date: "`r format(Sys.time(), '%B %Y')`"
 output: 
   vitae::markdowncv:
     theme: kjhealy
@@ -23,8 +20,8 @@ library(vitae)
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "Bren School of Environmental Science & Management", "2020-present", "Santa Barbara, CA", "Master of Environmental Science & Management",
-  "California State University, Monterey Bay", "2015-2019", "Seaside, CA", "Bachelor of Environmental Science") %>% 
+  "Bren School of Environmental Science & Management", "2020-2022", "Santa Barbara, CA", "Master of Environmental Science and Management",
+  "California State University, Monterey Bay", "2015-2019", "Seaside, CA", "B.S. in Environmental Science") %>% 
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
@@ -35,40 +32,38 @@ ______________________________________________________________________________
 ```{r}
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "University of California, Santa Barbara", "2020-present", "Santa Barbara, CA", "Research Assistant") %>% 
+  "University of California, Santa Barbara", "2020-present", "Santa Barbara, CA", "Graduate Research Assistant") %>% 
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
 Supervisor - Anastasia Quintana
 
-Duties:
-
 • Conducting literature reviews to inform postdoctoral research on compliance in small-scale fisheries
 
 • Identifying governance types in 75+ managed access areas throughout Indonesia, Brazil, Honduras, Micronesia, Mozambique, and the Philippines & creating a dataset with this information
 
-• Managing the social media presence of Dr. Anastasia Quintana to help expand her network
+• Managing the social media presence of Dr. Anastasia Quintana to expand her network
 
 ```{r}
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "Monterey Bay Aquarium Research Institute", "June - August 2018", "Moss Landing, CA", "Undergraduate Researcher") %>% 
+  "Monterey Bay Aquarium Research Institute", "June - August 2018", "Moss Landing, CA", "Undergraduate Researcher (NSF funded)") %>% 
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
 Supervisors - Dr. Steve Litvin, Dr. Jim Barry
 
-• Quantified & analyzed the effects of present & future climate change and ocean acidification associated with upwelling on juvenile *Haliotis rufescens* (red abalone) through an 8-week live experiment
+• Quantified and analyzed the effects of present & future climate change and ocean acidification associated with upwelling on juvenile red abalone through an 8-week live experiment
 
-• Created & maintained Excel worksheets with abalone measurement parameters for all 300+ individuals
+• Created and maintained Excel spreadsheets with various abalone measurements from 300+ individuals
 
 • Conducted extensive image and statistical analysis using experimental data from 300+ individuals  
 
-• Presented results to audiences ranging from 5-200 people at various conferences and symposiums including SACNAS and the California Central Coast Chapter of The Wildlife Society’s Annual Symposium
+• Presented results to audiences ranging from 10-200 people at various conferences and symposiums including SACNAS and the California Central Coast Chapter of The Wildlife Society’s Annual Symposium (2018)
 
 ______________________________________________________________________________
 
-### Volunteer Experience
+### Field and Outreach Experience
 
 ```{r}
 tribble(
@@ -77,11 +72,11 @@ tribble(
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
-• Surveyed & monitored *Phrynosoma blainvillii* (Blainville’s horned lizard) populations by catching and PIT tagging individuals
+• Surveyed and monitored Blainville’s horned lizard populations by catching and PIT tagging individuals
 
-• Handled live animals & collected data in the field using measurement equipment to capture parameters such as weight and snout-vent length
+• Collected data using field measurement equipment to capture parameters such as weight & snout-vent length
 
-• Informed the dissertation of Danielle Davis (UCSC) looking at temporal differences in horned lizard population over time at the UCSC FONR
+• Informed the dissertation of a Ph.D. student quantifying temporal differences in horned lizard population over time
 
 ```{r}
 tribble(
@@ -90,11 +85,11 @@ tribble(
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
-• Collected megalopa crab population data for a California Department of Fish and Wildlife (CDFW) monitoring project aiming to inform Dungeness crab fisheries
+• Collected megalopa crab population data for a California Department of Fish and Wildlife (CDFW) project aiming to inform Dungeness crab fisheries on local populations
 
-• Gathered & stored megalopa crab samples once a week from a trap at the Moss Landing Marine Labs boat dock
+• Gathered and stored megalopa crab samples once a week from a crab trap at the Moss Landing Marine Labs boat dock
 
-• Organized & maintained crab sample counts and measurement data into project notebook
+• Organized and maintained crab sample counts and measurement data in the project notebook
 
 ```{r}
 tribble(
@@ -103,9 +98,9 @@ tribble(
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
-• Co-taught an environmental education outreach program for 4th-5th grade elementary classes at local, lower-income schools
+• Co-taught an environmental education program for elementary classes at local, low-income schools
 
-• Prepared & organized lecture material for environmental science presentations adequate for 10-12-year old’s. Topics included photosynthesis, waste management, and climate change
+• Prepared and organized lecture material for environmental science presentations adequate for 10-12-year olds. Topics included photosynthesis, plastics, and climate change
 
 • Assisted in organizing multiple beach planting community events with the goal of reintroducing 200+ native plants across ~5 species back to vulnerable dune ecosystems
 
@@ -113,10 +108,9 @@ ______________________________________________________________________________
 
 ### Skills and certifications
 
-**Computer**: Microsoft Office (Word, Excel, PowerPoint), R, Google Suite, Outlooks
+**Computer**: R, GitHub, Microsoft Office (Word, Excel, PowerPoint), Google Suite
 
 **Language**: Bilingual (Spanish), public speaking, problem resolution, team building
 
 **Certifications**: CITI Responsible Research & Conduct, Trimble GPS
-
 
