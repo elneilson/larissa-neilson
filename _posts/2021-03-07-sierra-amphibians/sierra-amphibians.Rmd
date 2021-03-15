@@ -1,5 +1,5 @@
 ---
-title: "Sierra amphibians"
+title: "Exploring Amphibian Populations"
 description: |
   Exploring the mountain yellow-legged frog population in southern Sierra Nevada
 author:

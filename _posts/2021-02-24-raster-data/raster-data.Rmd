@@ -1,5 +1,5 @@
 ---
-title: "Raster data"
+title: "Raster Analysis"
 description: |
   Exploring Cetacean Species Richness in California
 author:

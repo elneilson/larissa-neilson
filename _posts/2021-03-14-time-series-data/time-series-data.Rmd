@@ -1,5 +1,5 @@
 ---
-title: "Time series data"
+title: "Time Series Analysis"
 description: |
   Time series of fish passage at Willamette Falls (group assignment)
 author:

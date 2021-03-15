@@ -6,7 +6,7 @@ title: "About me"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-I am originally from Lima, Peru, but largely grew up in Los Angeles. I am a first generation college student who graduated cum laude at California State University, Monterey Bay with a B.S. in Environmental Science, Technology, & Policy. I am a self-motivated, fast learner and eager to apply my skills in a meaningful way to the environmental management field.
+I am originally from Lima, Peru, but largely grew up in Los Angeles. I am a first generation college student and graduated cum laude at California State University, Monterey Bay with a B.S. in Environmental Science, Technology, & Policy. I am a self-motivated, fast learner and eager to apply my coding skills in a meaningful way to the environmental management field.
 
 ## Experience
 
