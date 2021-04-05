@@ -6,7 +6,7 @@ title: "About me"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-I am originally from Lima, Peru, but largely grew up in Los Angeles. I am a first generation college student and graduated cum laude at California State University, Monterey Bay with a B.S. in Environmental Science, Technology, & Policy. I am a self-motivated, fast learner and eager to apply my coding skills to the environmental management field.
+I am originally from Lima, Peru, but largely grew up in Los Angeles. I am a first generation college student and graduated cum laude at California State University, Monterey Bay with a B.S. in Environmental Science, Technology, & Policy. I am a self-motivated, fast learner and eager to apply my research and data analysis skills to the environmental management field.
 
 ## Experience
 
@@ -20,7 +20,7 @@ I love being outdoors and exploring local trails, with a particular affinity for
 
 ![Hanging out with a Monterey ensatina](ensatina.png)
 
-Aside from that, I am highly passionate about environmental justice issues and I am an avid supporter of black & indigenous rights. I hope to apply my data analysis skills to serve underprivileged groups facing environmental justice issues.
+Aside from that, I am highly passionate about environmental justice issues and I am an avid supporter of black & Indigenous rights. In my future career, I hope to apply my strong research, writing, and data analysis skills to serve marginalized groups facing environmental injustices.
 
 I currently reside in Goleta, CA (Chumash land) with my pet bunny and partner.
 
